@@ -1,0 +1,6 @@
+@import "./reset.css";
+@import "./fonts.css";
+* {
+  direction: rtl;
+  font-family: iranyekan !important;
+}
