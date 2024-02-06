@@ -48,7 +48,7 @@ Make sure you have the following dependencies installed:
 
 ## Run Project, Server, Tests, Build, and Preview
 
-````bash
+```bash
 # Run Project Locally
 npm run dev
 
@@ -61,10 +61,7 @@ npm run cypress
 # Build and Preview
 npm run build
 npm run preview
-**Styling:**
-For a visually appealing interface, consider using the following styles:
-
-```css
+<style>
 body {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
@@ -106,4 +103,5 @@ body {
 .button:hover {
   background-color: #0056b3;
 }
-````
+</style>
+
