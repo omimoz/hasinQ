@@ -4,7 +4,7 @@ import {
   fetchCards,
   fetchSingleCard,
 } from "../../data-services/data";
-
+// I preffer to combine all state it's small app so in large app better to seprate this file
 const combinedSlice = createSlice({
   name: "combined",
   initialState: {
@@ -34,18 +34,28 @@ const combinedSlice = createSlice({
         state.deleting = true;
         state.deletingErr = false;
       })
-      .addCase(fetchCards.pending || fetchSingleCard.pending, (state) => {
+      .addCase(fetchSingleCard.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(
-        fetchCards.fulfilled || fetchSingleCard.fulfilled,
-        (state, action) => {
-          state.isLoading = false;
-          state.isError = false;
-          state.data = action.payload;
-        }
-      )
-      .addCase(fetchCards.rejected || fetchSingleCard.rejected, (state) => {
+      .addCase(fetchSingleCard.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.isError = false;
+        state.data = action.payload;
+      })
+      .addCase(fetchSingleCard.rejected, (state) => {
+        state.isLoading = false;
+        state.deleting = false;
+        state.isError = true;
+      })
+      .addCase(fetchCards.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(fetchCards.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.isError = false;
+        state.data = action.payload;
+      })
+      .addCase(fetchCards.rejected, (state) => {
         state.isLoading = false;
         state.deleting = false;
         state.isError = true;

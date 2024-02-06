@@ -1,3 +1,5 @@
+//This component is used to display an error message when there is an issue connecting to the server.
+
 import { css } from "@emotion/css";
 import { Button } from "antd";
 import React from "react";

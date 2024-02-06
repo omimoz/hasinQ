@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { css } from "@emotion/css";
 
 function Header() {
+  //this const array of navigation 
   const items = [
     {
       label: (

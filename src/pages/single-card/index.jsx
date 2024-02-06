@@ -7,11 +7,14 @@ import SinglePageLoader from "../../components/loading/SinglePageLoader";
 
 function SinglePage() {
   const { info, data, refetch } = useInfo();
+  //FloatButton action to move back when click on that
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
+  //show loading page if data not ready
   if (data.isLoading) {
     return <SinglePageLoader />;
   }
+  //handle error and show toast
   if (data.isError && !data.isLoading) {
     message.error("مشکلی در اتصال ایجاد شده است");
     return <Error action={refetch} actionTxt={"تلاش مجدد"} />;

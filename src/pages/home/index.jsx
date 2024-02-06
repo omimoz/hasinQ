@@ -7,6 +7,7 @@ import Error from "../../components/Error";
 
 function Home() {
   const { data, refetch } = useGetAllPosts();
+  //loading page show when data not ready
   if (data && data.isLoading) {
     return (
       <Row gutter={[16, 24]}>
@@ -16,6 +17,7 @@ function Home() {
       </Row>
     );
   }
+  // handle error and show message as toast
   if (data && data.isError && !data.isLoading) {
     message.error("مشکلی در اتصال ایجاد شده است");
     return <Error action={refetch} actionTxt={"تلاش مجدد"} />;
@@ -23,7 +25,7 @@ function Home() {
   return (
     <div>
       <Row gutter={[16, 24]}>
-        {data.data?.map((card) => (
+        {data?.data?.map((card) => (
           <PostCard
             key={card?.id}
             id={card?.id}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Card, Col, Skeleton } from "antd";
+import { Card, Col, Skeleton } from "antd";
 import { css } from "@emotion/css";
 const { Meta } = Card;
 function CardLoader({ id }) {

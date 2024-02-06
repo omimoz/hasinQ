@@ -1,3 +1,4 @@
+//this is sample code of service worker but already for next js and vite js pwa library exist they are powerful and easy to use
 export default function swDev() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {

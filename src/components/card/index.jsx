@@ -5,6 +5,7 @@ import RemovePost from "../../components/actions/RemovePost";
 import { css } from "@emotion/css";
 const { Meta } = Card;
 function PostCard({ id, name, desc, img, shortDesc }) {
+  //this state help to idendify which card action on that I think we can use ref also but I preffer this way
   const [hover, setHover] = useState();
   return (
     <Col
