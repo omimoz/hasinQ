@@ -1,6 +1,4 @@
-# 🚀 **HassinQ: Modern React Project**
-
-Welcome to HassinQ, a modern React project for efficient state management and routing. This project uses various technologies and tools to streamline development and testing.
+# 🚀 **HassinQ: Quiz Hassin co**
 
 ## Table of Contents
 
@@ -45,6 +43,8 @@ Ensure you have the following dependencies installed:
 - **Use Store for Global States**: Use Redux store to handle global states. Located at `redux/store`.
 - **Use Mock Service API**: Use a mock service API with JSON server. Located at `data-services/db.json`.
 - **Add Some Style**: Add styles with Emotion CSS and Ant Design. Located at `./styles`.
+- **Use Cypress for Testing**: Use Cypress to test various scenarios. Located at `cypress/e2e`. (It's your first time using this library, hope it's satisfying!)
+- **Use Vite PWA**: Use Vite PWA to turn the app into a PWA. Include a simple demo code to register service worker and cache some static assets. Located at `sw.js`.
 
 ## Run Project, Server, Tests, Build, and Preview
 
@@ -61,3 +61,4 @@ npm run cypress
 # Build and Preview
 npm run build
 npm run preview
+```
