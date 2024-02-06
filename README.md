@@ -1,6 +1,6 @@
 # HassinQ
 
-description of project .
+Description of the project.
 
 ## Table of Contents
 
@@ -8,6 +8,10 @@ description of project .
 - [Tasks](#tasks)
   - [Three Routes](#three-routes)
   - [Notes](#notes)
+- [Run Project](#run-project)
+- [Run Server](#run-server)
+- [Run Tests](#run-tests)
+- [Build and Preview](#build-and-preview)
 
 ## Dependencies
 
@@ -42,8 +46,21 @@ Make sure you have the following dependencies installed:
 - **Use Mock Service API**: Use a mock service API with JSON server. Located at `data-services/db.json`.
 - **Add Some Style**: Add styles with Emotion CSS and Ant Design. Located at `./styles`.
 
----
+## Run Project, Server, Tests, Build, and Preview
 
+````bash
+# Run Project Locally
+npm run dev
+
+# Run JSON Server
+npx json-server --watch src/data-services/db.json --port 3031
+
+# Run Tests with Cypress
+npm run cypress
+
+# Build and Preview
+npm run build
+npm run preview
 **Styling:**
 For a visually appealing interface, consider using the following styles:
 
@@ -89,4 +106,4 @@ body {
 .button:hover {
   background-color: #0056b3;
 }
-```
+````
