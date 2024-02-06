@@ -1,6 +1,6 @@
-# HassinQ
+# 🚀 **HassinQ: Modern React Project**
 
-Description of the project.
+Welcome to HassinQ, a modern React project for efficient state management and routing. This project uses various technologies and tools to streamline development and testing.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Description of the project.
 
 ## Dependencies
 
-Make sure you have the following dependencies installed:
+Ensure you have the following dependencies installed:
 
 - **react-redux** (`^9.1.0`): Manage states globally.
 - **react-router-dom** (`^6.22.0`): Handle routes.
@@ -61,47 +61,3 @@ npm run cypress
 # Build and Preview
 npm run build
 npm run preview
-<style>
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-  background-color: #007bff;
-  padding: 10px;
-  color: #fff;
-}
-
-.card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #fff;
-}
-
-.button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-</style>
-
